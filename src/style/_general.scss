@@ -1,0 +1,70 @@
+// Styles
+body {
+    color: #5a5a5a;
+    position: relative;
+    font-family: 'Poly';
+    background-color: $color-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'IBM Plex Serif'
+}
+
+h3 {
+    font-size: 32px;
+}
+
+button {
+    &:focus {
+        outline: 0;
+    }
+}
+
+hr {
+    border-top: 1px solid $color-red;
+    opacity: .2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.browsers a {
+    color: $color-gold;
+    font-family: "IBM Plex Serif";
+}
+
+.browsers a:hover {
+    color: $color-blue;
+}
+
+.first-text {
+    position: relative;
+    z-index: 1;
+    font-family: 'Poly';
+    text-align: justify;
+}
+
+.first-text hr {
+    width: 75%;
+    margin: auto;
+}
+
+.album {
+    width: 100%;
+    display: flex;
+}
+
+.album>.container {
+    max-width: 1200px;
+    margin: auto;
+}

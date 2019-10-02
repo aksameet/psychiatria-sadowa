@@ -1,0 +1,97 @@
+/* COLORS
+-------------------------------------------------- */
+
+.color-light {
+    color: $color-white;
+}
+
+.color-gold {
+    color: $color-gold;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-dark {
+    position: relative;
+    z-index: 3;
+    background-color: $color-dark;
+    color: $color-light;
+}
+
+.bg-dark:after {
+    content: '';
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto 170%;
+    background-image: url('../assets/graphics/rectangle.svg');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.bg-gold {
+    background-color: $color-gold;
+}
+
+.bg-vlight {
+    position: relative;
+    z-index: 3;
+    background-color: $color-light;
+}
+
+.bg-vlight:after {
+    content: '';
+    opacity: .1;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    transform: rotateX(180deg);
+    background-size: auto 120%;
+    background-image: url('../assets/graphics/rectangle-gray.svg');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+
+/* ICONS
+-------------------------------------------------- */
+
+.chevron-left {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url('../assets/icons/chevron-left-solid.svg');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.icon-form {
+    display: inline-block;
+    width: 21px;
+    height: 25px;
+    background-image: url('../assets/icons/wpforms-brands.svg');
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.icon-user {
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    background-image: url('../assets/icons/user-regular.svg');
+    background-size: contain;
+    margin-left: 10px;
+}

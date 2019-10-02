@@ -1,0 +1,29 @@
+header {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    display: flex;
+    .logo-img {
+        order: 1;
+        width: 55%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        padding-bottom: 50px;
+    }
+    .notation {
+        order: 3;
+        display: block;
+        text-align: center;
+        margin: auto;
+        color: $color-gold;
+        opacity: .6;
+    }
+    .logo-wrapper {
+        display: block;
+    }
+    .logo-img img {
+        width: 70%;
+        margin: auto;
+    }
+}

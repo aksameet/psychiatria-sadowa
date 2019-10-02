@@ -1,0 +1,39 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    font-family: "IBM Plex Serif";
+    font-weight: 200;
+}
+
+.btn-light {
+    border: 1px solid rgba(75, 103, 119, .5);
+    align-self: flex-start
+}
+
+.btn-gold {
+    border: 1px solid rgba(122, 147, 161, 0.5);
+    align-self: flex-end;
+    background-color: rgba($color-gold, .8);
+    color: $color-white;
+    &:hover {
+        background-color: $color-light;
+        color: $color-dark;
+    }
+}
+
+.btn-blue {
+    border: 1px solid rgba(161, 183, 196, 0.5);
+    align-self: flex-end;
+    background-color: $color-blue;
+    color: $color-white;
+    &:hover {
+        background-color: $color-light;
+        color: $color-dark;
+        .icon-form {
+            background-image: url('../assets/icons/wpforms-brands-dark.svg');
+        }
+        .icon-user {
+            background-image: url('../assets/icons/user-regular-dark.svg');
+        }
+    }
+}
